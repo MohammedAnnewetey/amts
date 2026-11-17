@@ -1,0 +1,32 @@
+AMTS APPLICATION FORM — LIVE SETUP
+==================================
+
+The website is already wired for Cloudinary media uploads + Web3Forms email notifications.
+You only need to replace 3 placeholders in js/apply.js:
+
+1. YOUR_CLOUDINARY_CLOUD_NAME
+2. YOUR_UNSIGNED_UPLOAD_PRESET
+3. YOUR_WEB3FORMS_ACCESS_KEY
+
+DO NOT send or place these in GitHub:
+- Cloudinary API Secret
+- Porkbun password
+- Email password
+- GitHub password/token
+
+Recommended Cloudinary preset settings:
+- Signing mode: Unsigned
+- Folder/asset folder: amts-applications (optional; the site also groups each application)
+- Restrict formats to normal image/video formats where possible
+- Keep transformations minimal for original scouting media
+
+Web3Forms:
+- Create the access key using Scouting@africamts.com as the receiving email.
+- Verify that inbox when Web3Forms asks.
+- The application email will contain applicant details and Cloudinary links, not huge video attachments.
+
+Before launch, submit a test application from the published GitHub Pages URL and verify:
+- Images/videos appear in Cloudinary
+- Scouting inbox receives the application
+- Links in the email open correctly
+- Reply-to points to the applicant's email

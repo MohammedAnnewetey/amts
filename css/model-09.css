@@ -1,0 +1,418 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:#030303;color:#f5efe7}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.site-header{position:fixed;top:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:28px 13.5%;background:rgba(3,3,3,.54);border-bottom:1px solid rgba(226,182,92,.13);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:.25s ease}.site-header.scrolled{background:rgba(3,3,3,.9);padding-top:18px;padding-bottom:18px;box-shadow:0 20px 60px rgba(0,0,0,.28)}.brand{justify-self:start;line-height:1;text-transform:uppercase;color:#e2b65c}.brand span{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;letter-spacing:.075em}.brand small{display:block;margin-top:6px;font-size:12px;letter-spacing:.32em;color:#cfc6bd}.main-nav{display:flex;align-items:center;gap:42px}.main-nav a{position:relative;font-size:18px;color:#ddd4cb;transition:color .25s ease}.main-nav a:hover,.main-nav a.active{color:#e2b65c}.main-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:1px;background:#e2b65c;transform:scaleX(0);transition:transform .25s ease}.main-nav a:hover::after,.main-nav a.active::after{transform:scaleX(1)}.header-actions{justify-self:end;display:flex;gap:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #e2b65c;background:#e2b65c;color:#15110b;padding:16px 28px;text-transform:uppercase;font-size:14px;letter-spacing:.12em;font-weight:600;border-radius:999px;transition:.25s ease}.btn:hover{transform:translateY(-2px)}.btn.outline{background:rgba(255,255,255,.04);color:#f3eadf;border-color:rgba(226,182,92,.35);backdrop-filter:blur(8px)}.btn.small{padding:14px 24px}.menu-toggle{display:none;background:none;border:0;padding:8px}.menu-toggle span{display:block;width:25px;height:2px;background:#f5efe7;margin:6px 0;transition:.25s ease}.menu-toggle.is-open span:nth-child(1){transform:translateY(8px) rotate(45deg)}.menu-toggle.is-open span:nth-child(2){opacity:0}.menu-toggle.is-open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.mobile-nav-actions{display:none}.profile-page{padding:150px 6.5% 90px;min-height:100vh}.profile-shell{max-width:1680px;margin:0 auto;display:grid;grid-template-columns:minmax(340px,.9fr) 1.1fr;gap:72px;align-items:start}.profile-media{position:sticky;top:118px}.hero-frame{position:relative;overflow:hidden;background:#101010;border:1px solid rgba(226,182,92,.16);box-shadow:0 32px 110px rgba(0,0,0,.35)}.hero-img{width:100%;height:76vh;min-height:560px;object-fit:cover;object-position:center 18%;background:linear-gradient(135deg,#1b1b1b,#050505);filter:grayscale(100%) contrast(1.05);transform:scale(.985);transition:filter .55s ease,transform .65s ease}.profile-media:hover .hero-img{filter:grayscale(0%) contrast(1);transform:scale(1)}.image-guide{margin-top:14px;color:#7e756e;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.profile-content{padding-top:24px}.back-link{display:inline-flex;margin-bottom:30px;color:#e2b65c;text-transform:uppercase;letter-spacing:.22em;font-size:12px}.eyebrow{text-transform:uppercase;letter-spacing:.32em;color:#e2b65c;font-size:14px;margin:0 0 24px}h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0;color:#fff6ed;font-weight:500}h1{font-size:clamp(74px,7.4vw,142px);line-height:.84;letter-spacing:-.05em}p{font-size:16px;line-height:1.85;color:#bdb3ad}.division{font-size:17px;text-transform:uppercase;letter-spacing:.25em;color:#e2b65c;margin-top:18px}.profile-intro{max-width:720px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}.stat{border:1px solid rgba(226,182,92,.16);background:linear-gradient(145deg,#090909,#050505);padding:22px}.stat small{display:block;text-transform:uppercase;letter-spacing:.22em;color:#a9a09a;font-size:10px;margin-bottom:10px}.stat strong{font-family:'Cormorant Garamond',serif;font-size:28px;color:#fff6ed;font-weight:500}.book-strip{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 54px}.book-tabs{display:flex;gap:12px;margin:16px 0 26px;flex-wrap:wrap}.tab-btn{border:1px solid rgba(226,182,92,.28);background:rgba(255,255,255,.035);color:#f5efe7;border-radius:999px;padding:13px 22px;font:600 12px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:.25s ease}.tab-btn:hover,.tab-btn.active{background:#e2b65c;color:#15110b;border-color:#e2b65c}.section-title{font-size:44px;margin:42px 0 10px}.section-note{margin:0 0 24px;max-width:720px}.gallery-panel{display:none}.gallery-panel.active{display:block}.model-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.model-gallery.polaroids{grid-template-columns:repeat(4,minmax(0,1fr))}.model-shot{position:relative;overflow:hidden;background:#0d0d0d;border:1px solid rgba(255,255,255,.08);aspect-ratio:3/4}.model-gallery.polaroids .model-shot{aspect-ratio:2/3}.model-shot img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:grayscale(100%) contrast(1.04);transform:scale(.98);transition:filter .5s ease,transform .5s ease}.model-shot:hover img{filter:grayscale(0%) contrast(1);transform:scale(1.015)}.model-shot::after{content:attr(data-label);position:absolute;left:14px;bottom:12px;padding:8px 12px;border-radius:999px;background:rgba(0,0,0,.55);border:1px solid rgba(226,182,92,.25);color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:0;transition:.25s ease}.model-shot:hover::after{opacity:1}.insert-note{margin-top:26px;padding:18px 20px;border:1px solid rgba(226,182,92,.16);background:rgba(255,255,255,.035);color:#a99f98;font-size:13px;line-height:1.7}.site-footer{padding:58px 13.5%;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;border-top:1px solid rgba(226,182,92,.16);background:#030303}.site-footer strong{font-family:'Cormorant Garamond',serif;color:#e2b65c;font-size:22px}.site-footer nav,.footer-contact{display:flex;flex-direction:column;gap:10px;color:#d7cdc4}.site-footer small{color:#e2b65c;text-transform:uppercase;letter-spacing:.25em}.footer-socials{display:flex;gap:12px;margin-top:18px}.footer-socials a,.footer-contact a{transition:.25s ease}.footer-socials a:hover,.footer-contact a:hover,.footer-links a:hover{color:#e2b65c}.footer-socials a{width:38px;height:38px;border:1px solid rgba(226,182,92,.24);border-radius:50%;display:grid;place-items:center}@media(max-width:1100px){.model-gallery,.model-gallery.polaroids{grid-template-columns:repeat(2,1fr)}}@media(max-width:980px){body.menu-open{overflow:hidden}.site-header{grid-template-columns:1fr auto;padding:16px 20px;background:linear-gradient(180deg,rgba(0,0,0,.72),rgba(0,0,0,.26));backdrop-filter:blur(20px)}.brand span{font-size:19px}.brand small{font-size:9px;letter-spacing:.24em}.header-actions{display:none}.menu-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid rgba(226,182,92,.25);border-radius:999px;background:rgba(255,255,255,.04);z-index:50}.menu-toggle span{width:22px;height:2px;margin:3px 0}.main-nav{position:fixed;top:76px;left:14px;right:14px;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:18px;background:rgba(6,6,6,.92);border:1px solid rgba(226,182,92,.22);border-radius:28px;backdrop-filter:blur(24px);box-shadow:0 32px 90px rgba(0,0,0,.55);opacity:0;visibility:hidden;transform:translateY(-16px) scale(.98);transition:.25s ease}.main-nav.open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}.main-nav a{padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.07);font-size:16px;letter-spacing:.08em;text-transform:uppercase}.main-nav a::after{display:none}.mobile-nav-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.mobile-nav-actions a{display:flex;align-items:center;justify-content:center;border:1px solid #e2b65c;border-radius:999px;padding:15px 12px;background:#e2b65c;color:#17110a;font-size:13px;font-weight:700}.mobile-nav-actions a:first-child{background:transparent;color:#f5efe7}.profile-page{padding:120px 20px 70px}.profile-shell{grid-template-columns:1fr;gap:38px}.profile-media{position:relative;top:auto}.hero-img{height:62vh;min-height:440px}.stats{grid-template-columns:repeat(2,1fr)}.model-gallery,.model-gallery.polaroids{grid-template-columns:1fr 1fr;gap:12px}.site-footer{grid-template-columns:1fr;padding:44px 20px}h1{font-size:clamp(56px,16vw,88px)}}
+/* Click-to-open gallery viewer for model portfolio and polaroid images */
+.model-shot.is-clickable{cursor:zoom-in}.model-shot.is-clickable::before{content:"Click to view";position:absolute;top:12px;right:12px;z-index:2;padding:7px 10px;border:1px solid rgba(226,182,92,.28);border-radius:999px;background:rgba(0,0,0,.58);color:#fff;font-size:9px;text-transform:uppercase;letter-spacing:.16em;opacity:0;transform:translateY(-4px);transition:.25s ease}.model-shot.is-clickable:hover::before{opacity:1;transform:translateY(0)}body.lightbox-open{overflow:hidden}.image-lightbox{position:fixed;inset:0;z-index:999;display:grid;place-items:center;padding:80px 7vw;background:rgba(0,0,0,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}.image-lightbox.open{opacity:1;visibility:visible}.lightbox-frame{margin:0;max-width:min(1180px,88vw);max-height:86vh;display:flex;flex-direction:column;align-items:center;gap:14px}.lightbox-img{max-width:100%;max-height:78vh;width:auto;height:auto;object-fit:contain;object-position:center;background:#080808;box-shadow:0 30px 100px rgba(0,0,0,.65);border:1px solid rgba(226,182,92,.22)}.lightbox-caption{font-size:12px;color:#e2b65c;text-transform:uppercase;letter-spacing:.22em}.lightbox-close,.lightbox-nav{position:fixed;border:1px solid rgba(226,182,92,.35);background:rgba(255,255,255,.06);color:#f5efe7;display:grid;place-items:center;cursor:pointer;transition:.25s ease;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.lightbox-close:hover,.lightbox-nav:hover{background:#e2b65c;color:#15110b;transform:scale(1.04)}.lightbox-close{top:26px;right:28px;width:48px;height:48px;border-radius:999px;font-size:20px}.lightbox-nav{top:50%;transform:translateY(-50%);width:54px;height:72px;border-radius:999px;font-size:20px}.lightbox-nav:hover{transform:translateY(-50%) scale(1.04)}.lightbox-prev{left:28px}.lightbox-next{right:28px}@media(max-width:760px){.image-lightbox{padding:76px 18px}.lightbox-img{max-height:70vh}.lightbox-close{top:18px;right:18px;width:44px;height:44px}.lightbox-nav{top:auto;bottom:22px;width:48px;height:48px}.lightbox-prev{left:calc(50% - 58px)}.lightbox-next{right:calc(50% - 58px)}.lightbox-caption{font-size:10px;text-align:center}}
+
+
+/* === AMTS final branding and image polish === */
+.brand{display:inline-flex!important;align-items:center!important;gap:12px!important;min-width:max-content;}
+.brand-logo{width:54px;height:54px;object-fit:contain;display:block;filter:drop-shadow(0 6px 16px rgba(226,182,92,.18));}
+.brand-text{display:flex;flex-direction:column;line-height:1;}
+.brand-text strong{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;letter-spacing:.075em;color:#e2b65c;}
+.brand-text small{display:block;margin-top:6px;font-size:10px;letter-spacing:.32em;color:#cfc6bd;}
+.footer-logo-line{display:flex;align-items:center;gap:14px;margin-bottom:10px;}
+.footer-logo{width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 6px 16px rgba(226,182,92,.16));}
+img{object-position:center 22%;}
+.models-hero{--hero-img:url("../images/models-hero.jpg")}.portfolio-hero{--hero-img:url("../images/portfolio-hero.jpg")}.about-hero{--hero-img:url("../images/about-hero.jpg")}
+.insert-note{margin-top:26px;padding:18px 20px;border:1px solid rgba(226,182,92,.16);background:rgba(255,255,255,.035);color:#a99f98;font-size:13px;line-height:1.7}.insert-note code{color:#e2b65c}
+@media(max-width:980px){.brand-logo{width:44px;height:44px}.brand-text strong{font-size:16px}.brand-text small{font-size:8px;letter-spacing:.22em}.footer-logo{width:44px;height:44px}}
+
+
+/* Model profile final image system */
+.profile-media .hero-img,.model-shot img{filter:grayscale(100%) contrast(1.04);}
+.profile-media:hover .hero-img,.hero-frame:focus-within .hero-img,.model-shot:hover img,.model-shot:focus-within img,.model-shot.is-viewing img{filter:grayscale(0%) contrast(1);}
+.hero-img{object-fit:cover!important;object-position:center 16%!important;transform:scale(.96)!important;}
+.profile-media:hover .hero-img{transform:scale(1)!important;}
+.bio-card{margin:28px 0 14px;padding:28px;border:1px solid rgba(226,182,92,.16);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));}
+.bio-card h2{font-size:40px;margin:0 0 10px}.bio-card p{margin:0;max-width:760px}.model-gallery,.model-gallery.polaroids{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important}.model-gallery.polaroids .model-shot{aspect-ratio:3/4!important}.model-shot{aspect-ratio:3/4!important;border-radius:2px}.model-shot img{object-fit:cover!important;object-position:center 16%!important;transform:scale(.96)!important}.model-shot:hover img{transform:scale(1.01)!important}.lightbox-img{object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important}.image-lightbox.open .lightbox-img{filter:none!important}.insert-note code{color:#e2b65c}@media(max-width:1100px){.model-gallery,.model-gallery.polaroids{grid-template-columns:repeat(2,1fr)!important}}@media(max-width:760px){.model-gallery,.model-gallery.polaroids{grid-template-columns:1fr!important}.hero-img{min-height:420px!important;height:62vh!important}.stats{grid-template-columns:1fr 1fr!important}}
+
+
+/* === Final AMTS polish: logo placement and image visibility === */
+.brand{display:inline-flex!important;align-items:center!important;gap:12px!important;min-width:0!important}.brand-logo{width:56px!important;height:auto!important;max-height:42px!important;object-fit:contain!important;display:block!important;flex:0 0 auto!important}.brand-text{display:flex!important;flex-direction:column!important;line-height:1!important}.brand-text strong{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.06em;color:#e2b65c}.brand-text small{margin-top:5px;font-size:10px;letter-spacing:.28em;color:#d7cdc4}.footer-logo-line{display:flex;align-items:center;gap:12px}.footer-logo{width:52px;height:auto;max-height:38px;object-fit:contain}
+@media(max-width:980px){.brand-logo{width:44px!important;max-height:34px!important}.brand-text strong{font-size:16px!important}.brand-text small{font-size:8px!important;letter-spacing:.2em!important}}
+
+
+/* === Final AMTS roster/image polish === */
+.model-card img,
+.profile-page .hero-img,
+.profile-page .model-shot img{
+  filter: grayscale(100%) contrast(1.04);
+  transition: filter .55s ease, transform .65s ease, opacity .3s ease;
+}
+.model-card:hover img,
+.profile-page .hero-frame:hover .hero-img,
+.profile-page .model-shot:hover img,
+.profile-page .model-shot.is-clickable:hover img{
+  filter: grayscale(0%) contrast(1);
+}
+.model-card img,
+.profile-page .hero-img,
+.profile-page .model-shot img,
+.portfolio-item img,
+.portfolio-story-image img,
+.feature-image img,
+.mini-model img{
+  object-fit: cover;
+  object-position: center 18%;
+}
+.models-grid{align-items:stretch;}
+.model-image-wrap{overflow:hidden;background:#111;}
+.model-card img{width:100%;height:520px;}
+.model-card:hover img{transform:scale(1.045);}
+.profile-page .hero-img{object-position:center 16%;}
+.profile-page .model-gallery.polaroids{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}
+.profile-page .model-gallery.polaroids .model-shot img{height:560px;}
+.profile-page .model-shot{overflow:hidden;background:#111;}
+.profile-extra-stats{display:grid;grid-template-columns:repeat(5,minmax(90px,1fr));gap:12px;margin:22px 0 32px;}
+.profile-extra-stats div{border:1px solid rgba(226,182,92,.16);background:rgba(255,255,255,.035);padding:16px;}
+.profile-extra-stats small{display:block;color:#e2b65c;text-transform:uppercase;letter-spacing:.18em;font-size:10px;margin-bottom:8px;}
+.profile-extra-stats span{color:#f5efe7;}
+.bio-card div[data-edit="model-long-bio"] p{margin:0 0 18px;}
+.bio-card div[data-edit="model-long-bio"] p:last-child{margin-bottom:0;}
+.brand-logo{width:54px;height:54px;object-fit:contain;}
+.footer-logo{width:44px;height:44px;object-fit:contain;}
+@media(max-width:980px){
+  .model-card img{height:480px;}
+  .profile-page .model-gallery.polaroids{grid-template-columns:1fr;}
+  .profile-page .model-gallery.polaroids .model-shot img{height:540px;}
+  .profile-extra-stats{grid-template-columns:repeat(2,1fr);}
+  .brand-logo{width:42px;height:42px;}
+}
+
+
+/* === REQUESTED CHANGE: black-and-white effect ONLY on model images ===
+   All model cover, roster, portfolio and polaroid images stay black and white by default.
+   They turn full colour when hovered, focused, or opened in the lightbox. */
+.model-card img,
+.profile-page .hero-img,
+.profile-page .model-shot img{
+  filter: grayscale(100%) contrast(1.01) brightness(1.02) !important;
+  transition: filter .55s ease, transform .65s ease, opacity .3s ease !important;
+}
+.model-card:hover img,
+.model-card:focus-visible img,
+.profile-page .profile-media:hover .hero-img,
+.profile-page .hero-frame:hover .hero-img,
+.profile-page .hero-frame:focus-within .hero-img,
+.profile-page .model-shot:hover img,
+.profile-page .model-shot:focus-within img,
+.profile-page .model-shot.is-clickable:hover img{
+  filter: grayscale(0%) contrast(1) !important;
+}
+.image-lightbox.open .lightbox-img,
+.lightbox-img{
+  filter: none !important;
+}
+
+/* Clean editable bio space without visible guide text */
+.empty-bio-line{min-height:1.8em;}
+.empty-bio-space{display:block;min-height:110px;}
+
+
+/* === AMTS EXECUTIVE FINAL FIXES ===
+   - Content is visible by default so the models page cannot disappear.
+   - Model photos are shown zoomed out/contained for crisp full-body display.
+   - Measurement-card images are excluded in the HTML by the build script.
+*/
+.reveal,
+.reveal.show,
+.reveal.visible{
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+.models-grid{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr)) !important;
+  gap:28px !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.models-page .container,
+.profile-content,
+.profile-media{
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+.model-card{display:block;min-width:0;}
+.model-image-wrap{
+  background:#0b0b0b !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:hidden !important;
+  aspect-ratio:3/4 !important;
+  height:auto !important;
+}
+.model-card img,
+.mini-model img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+  background:#0b0b0b !important;
+  filter:grayscale(100%) contrast(1.01) brightness(1.02) !important;
+}
+.model-card:hover img,
+.model-card:focus-visible img,
+.mini-model:hover img{
+  filter:grayscale(0%) contrast(1) !important;
+  transform:none !important;
+}
+.profile-page .hero-frame,
+.profile-page .model-shot,
+.portfolio-item,
+.portfolio-story-image,
+.feature-image{
+  background:#0b0b0b !important;
+  overflow:hidden !important;
+}
+.profile-page .hero-img{
+  width:100% !important;
+  height:76vh !important;
+  min-height:560px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+  background:#0b0b0b !important;
+  filter:grayscale(100%) contrast(1.01) brightness(1.02) !important;
+}
+.profile-page .model-shot{
+  aspect-ratio:3/4 !important;
+  display:grid !important;
+  place-items:center !important;
+}
+.profile-page .model-shot img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+  background:#0b0b0b !important;
+  filter:grayscale(100%) contrast(1.01) brightness(1.02) !important;
+}
+.profile-page .hero-frame:hover .hero-img,
+.profile-page .profile-media:hover .hero-img,
+.profile-page .model-shot:hover img,
+.profile-page .model-shot:focus-within img{
+  filter:grayscale(0%) contrast(1) !important;
+  transform:none !important;
+}
+.portfolio-item img,
+.portfolio-story-image img,
+.feature-image img,
+.about-image img,
+.home-feature img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  background:#0b0b0b !important;
+  transform:none !important;
+}
+.page-hero{background-position:center center !important;}
+.model-placeholder,
+.placeholder-card .model-image-wrap{height:auto !important;min-height:360px !important;}
+.model-placeholder img{object-fit:contain !important;filter:none !important;background:transparent !important;}
+.lightbox-img{object-fit:contain !important;filter:none !important;transform:none !important;background:#050505 !important;}
+@media(max-width:980px){
+  .models-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr)) !important;}
+  .profile-page .hero-img{height:62vh !important;min-height:420px !important;}
+}
+
+/* === AMTS PROFESSIONAL IMAGE FRAME FIX ===
+   Removes black/blank letterbox spaces by making images fill their frames cleanly.
+   Images keep a polished crop with faces/full bodies positioned naturally.
+*/
+.hero-frame,
+.profile-page .hero-frame,
+.model-image-wrap,
+.model-shot,
+.feature-image,
+.portfolio-story-image,
+.portfolio-item,
+.about-image,
+.home-feature .feature-image,
+.mini-model{
+  overflow:hidden !important;
+  background:#050505 !important;
+}
+
+.profile-page .hero-img,
+.profile-page .model-shot img,
+.model-card img,
+.mini-model img,
+.feature-image img,
+.home-feature .feature-image img,
+.portfolio-story-image img,
+.portfolio-item img,
+.about-image img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center 18% !important;
+  background:transparent !important;
+}
+
+/* Model profile cover area: keep it editorial and full, no empty side bars. */
+.profile-page .hero-frame{
+  aspect-ratio:4/5 !important;
+  height:auto !important;
+  max-height:none !important;
+}
+.profile-page .hero-img{
+  min-height:0 !important;
+  height:100% !important;
+  max-height:none !important;
+  object-position:center 16% !important;
+}
+
+/* Polaroid/portfolio grids: full-frame, crisp thumbnails. */
+.profile-page .model-shot,
+.model-gallery .model-shot,
+.model-gallery.polaroids .model-shot{
+  aspect-ratio:3/4 !important;
+}
+.profile-page .model-shot img,
+.model-gallery .model-shot img,
+.model-gallery.polaroids .model-shot img{
+  object-fit:cover !important;
+  object-position:center 16% !important;
+}
+
+/* Homepage featured models keep the requested black-and-white to colour hover. */
+.featured-models .mini-model img,
+.model-card img,
+.profile-page .hero-img,
+.profile-page .model-shot img{
+  filter:grayscale(100%) contrast(1.01) brightness(1.02) !important;
+  transition:filter .45s ease, transform .55s ease !important;
+}
+.featured-models .mini-model:hover img,
+.model-card:hover img,
+.profile-page .hero-frame:hover .hero-img,
+.profile-page .model-shot:hover img{
+  filter:grayscale(0%) contrast(1) !important;
+}
+
+/* Non-model editorial images stay full colour and fill the available space. */
+.feature-image img,
+.home-feature .feature-image img,
+.portfolio-story-image img,
+.portfolio-item img,
+.about-image img{
+  filter:none !important;
+}
+
+@media(max-width:980px){
+  .profile-page .hero-frame{aspect-ratio:3/4 !important;}
+  .profile-page .hero-img{height:100% !important;min-height:0 !important;}
+}
+
+
+/* === AMTS SOFTER IMAGE CONTRAST PATCH ===
+   Reduces the heavy contrast so photos look cleaner, sharper and less blurry,
+   while keeping the premium black/white hover effect on model cards. */
+.featured-models .mini-model img,
+.model-card img,
+.profile-page .hero-img,
+.profile-page .model-shot img{
+  filter:grayscale(100%) contrast(1.01) brightness(1.02) !important;
+}
+.featured-models .mini-model:hover img,
+.model-card:hover img,
+.profile-page .hero-frame:hover .hero-img,
+.profile-page .model-shot:hover img{
+  filter:grayscale(0%) contrast(1) brightness(1) !important;
+}
+
+/* Hero images: keep text readable, but reduce the heavy dark overlay that made images look muddy. */
+@media (min-width:981px){
+  .home-hero::after,
+  .page-hero::after,
+  .models-hero::after,
+  .about-hero::after,
+  .portfolio-hero::after{
+    height:38% !important;
+    background:linear-gradient(180deg,transparent 0%,rgba(3,3,3,.48) 58%,#030303 100%) !important;
+  }
+  .page-hero,
+  .models-hero,
+  .about-hero,
+  .portfolio-hero{
+    background-blend-mode:normal !important;
+  }
+}
+
+/* Keep editorial photos natural and crisp. */
+.feature-image img,
+.home-feature .feature-image img,
+.portfolio-story-image img,
+.portfolio-item img,
+.about-image img{
+  filter:contrast(1) brightness(1) saturate(1) !important;
+}
+
+/* === AMTS FINAL CRISP IMAGE PATCH ===
+   Fixes first-load blurry/pixelated photos by removing image filters, heavy contrast,
+   animated scaling and progressive hover transforms that can make Chrome rasterize images softly.
+   Refresh will no longer be needed for images to appear clean. */
+img,
+main img,
+.model-card img,
+.mini-model img,
+.feature-image img,
+.portfolio-item img,
+.portfolio-story-image img,
+.about-image img,
+.profile-page .hero-img,
+.profile-page .model-shot img,
+.lightbox-img{
+  filter:none !important;
+  -webkit-filter:none !important;
+  transform:none !important;
+  backface-visibility:hidden !important;
+  -webkit-backface-visibility:hidden !important;
+  image-rendering:auto !important;
+  opacity:1 !important;
+}
+
+.model-card:hover img,
+.mini-model:hover img,
+.feature-image:hover img,
+.portfolio-item:hover img,
+.portfolio-story-image:hover img,
+.profile-page .model-shot:hover img,
+.profile-page .hero-frame:hover .hero-img{
+  filter:none !important;
+  -webkit-filter:none !important;
+  transform:none !important;
+}
+
+/* Keep the home model black-and-white hover effect only, without contrast/blur or scaling. */
+.home-page .mini-model img,
+.featured-models .mini-model img{
+  filter:grayscale(100%) !important;
+  -webkit-filter:grayscale(100%) !important;
+  transition:filter .28s ease !important;
+}
+.home-page .mini-model:hover img,
+.featured-models .mini-model:hover img{
+  filter:grayscale(0%) !important;
+  -webkit-filter:grayscale(0%) !important;
+}
+
+/* Make image frames stable while the full-quality file loads. */
+.feature-image,
+.portfolio-item,
+.portfolio-story-image,
+.model-card,
+.mini-model,
+.model-shot,
+.hero-frame{
+  contain:paint !important;
+}
+
+/* Portfolio images stay in original colour; Polaroids retain B&W-to-colour hover. */
+.gallery-panel[data-gallery-panel="portfolio"] .model-shot img{filter:none!important;}
+.gallery-panel[data-gallery-panel="portfolio"] .model-shot:hover img{filter:none!important;}
